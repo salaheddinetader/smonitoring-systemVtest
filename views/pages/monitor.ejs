@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    
+  </head>
+  <body>
+
+
+    <div class="container">
+        <div class="header">
+            <div><span>Smart Item Monitoring</span></div>
+            <div>
+                <ul>
+                    <li>Date: 2022/04/19</li>  
+                    <li>Time: 17:38</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="content-left">
+          <img src="./img//user.jpg" alt="user" >
+          <h1>Full name</h1>
+          <h2>Jean doe</h2>
+          <h1>Id Agent</h1>
+          <h2>#KDF3</h2>
+          <h1>Fonction</h1>
+          <h2>Expédition</h2>
+        </div>
+        <div class="content-large">
+          <span>136</span>
+          <div>
+              <span class="span-right1">KLT</span>
+              <span class="span-right2">Pallet Number</span>
+              <span  class="span-right3">01.0000389.000162</span>
+          </div>
+        </div>
+        <div class="content-small-a">
+          <div>12</div>
+          <div>Total Pallet</div>
+          <div>Day</div>
+        </div>
+        <div class="content-small-b">
+          <div>90</div>
+          <div>Total KLT</div>
+          <div>Day</div>
+        </div>
+        <div class="content-small-c"><div>04</div>
+        <div>Total Agents</div>
+        <div>Day</div></div>
+
+        <script type='text/javascript'>
+          var rows =<  %-JSON.stringify(info)%>
+          alert(rows);
+        </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+    
+  </head>
+  <body>
+
+
+    <div class="container">
+        <div class="header">
+            <div><span>Smart Item Monitoring</span></div>
+            <div>
+                <ul>
+                    <li>Date: 14/09/2022</li>  
+                    <li>Time: 13:34</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="content-left">
+          <img src="./img//user.jpg" alt="user" >
+          <h1>Full name</h1>
+          <h2>Tader Salah Eddine</h2>
+          <h1>ID Agent</h1>
+          <h6><%= JSON.stringify(data.children[1].objectId).slice(1, -1)%></h6>
+          <h1>Fonction</h1>
+          <h2>Expédition</h2>
+        </div>
+        <div class="content-large">
+          <span><%= JSON.stringify(data["tag-count"])%></span>
+          <div>
+              <span class="span-right1">KLT</span>
+              <span class="span-right2">Pallet Number</span>
+              <span  class="span-right3"><%= JSON.stringify(data.children[0].objectId).slice(1, -1)%></span>
+          </div>
+        </div>
+        <div class="content-small-a">
+          <div>20</div>
+          <div>Total Pallet</div>
+          <div>Day</div>
+        </div>
+        <div class="content-small-b">
+          <div>200</div>
+          <div>Total KLT</div>
+          <div>Day</div>
+        </div>
+        <div class="content-small-c"><div>4</div>
+        <div>Total Agents</div>
+        <div>Day</div></div>
+
+
+        
+  </body>
+</html>
